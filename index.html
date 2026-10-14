@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DSA Exam | Online Examination System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">D</div>
+
+            <div>
+                <h2>DSA<span>Exam</span></h2>
+                <small>ONLINE EXAM SYSTEM</small>
+            </div>
+        </div>
+
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#topics">Topics</a>
+            <a href="#about">About</a>
+        </nav>
+
+
+        <div class="nav-actions">
+            <button class="login-btn" onclick="openLogin()">
+                Login
+            </button>
+
+            <button class="register-btn" onclick="openRegister()">
+                Get Started
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    SMART DSA EXAMINATION PLATFORM
+                </div>
+
+
+                <h1>
+                    Master DSA.
+                    <br>
+
+                    <span>Test Your Skills.</span>
+                </h1>
+
+
+                <p class="hero-text">
+                    Practice Data Structures and Algorithms,
+                    take timed online exams, and track your
+                    performance with a modern examination platform.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" onclick="startExam()">
+                        Start an Exam
+                        <span>→</span>
+                    </button>
+
+                    <button class="outline-btn" onclick="viewQuestions()">
+                        Explore Question Bank
+                    </button>
+
+                </div>
+
+
+                <div class="trust-row">
+
+                    <div class="trust-item">
+                        <strong>100+</strong>
+                        <span>DSA Questions</span>
+                    </div>
+
+                    <div class="trust-line"></div>
+
+                    <div class="trust-item">
+                        <strong>8+</strong>
+                        <span>DSA Topics</span>
+                    </div>
+
+                    <div class="trust-line"></div>
+
+                    <div class="trust-item">
+                        <strong>24/7</strong>
+                        <span>Practice Access</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= EXAM CARD ================= -->
+
+            <div class="exam-preview">
+
+                <div class="preview-glow"></div>
+
+                <div class="exam-window">
+
+                    <div class="window-top">
+
+                        <div class="window-title">
+                            <span class="live-dot"></span>
+                            DSA Assessment
+                        </div>
+
+                        <div class="window-menu">
+                            •••
+                        </div>
+
+                    </div>
+
+
+                    <div class="exam-info">
+
+                        <div>
+                            <p>ONLINE EXAM</p>
+                            <h3>Data Structures & Algorithms</h3>
+                        </div>
+
+                        <div class="exam-status">
+                            ACTIVE
+                        </div>
+
+                    </div>
+
+
+                    <div class="exam-stats">
+
+                        <div class="stat-card">
+                            <span class="stat-icon">⌁</span>
+                            <div>
+                                <small>QUESTIONS</small>
+                                <strong>25</strong>
+                            </div>
+                        </div>
+
+
+                        <div class="stat-card">
+                            <span class="stat-icon">◷</span>
+                            <div>
+                                <small>DURATION</small>
+                                <strong>30 min</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-section">
+
+                        <div class="progress-heading">
+                            <span>Exam Progress</span>
+                            <strong>40%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-value"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="question-box">
+
+                        <div class="question-top">
+                            <span>QUESTION 10 OF 25</span>
+                            <span class="difficulty">MEDIUM</span>
+                        </div>
+
+                        <h4>
+                            Which data structure follows the
+                            LIFO principle?
+                        </h4>
+
+
+                        <div class="answer-option">
+                            <span>A</span>
+                            Queue
+                        </div>
+
+                        <div class="answer-option selected">
+                            <span>B</span>
+                            Stack
+                            <b>✓</b>
+                        </div>
+
+                        <div class="answer-option">
+                            <span>C</span>
+                            Linked List
+                        </div>
+
+                        <div class="answer-option">
+                            <span>D</span>
+                            Tree
+                        </div>
+
+                    </div>
+
+
+                    <div class="window-footer">
+
+                        <span>
+                            ● Auto-save enabled
+                        </span>
+
+                        <button onclick="startExam()">
+                            Continue →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+
+                <span>WHY DSA EXAM?</span>
+
+                <h2>
+                    Everything you need to
+                    <strong>practice smarter.</strong>
+                </h2>
+
+                <p>
+                    A complete online examination experience
+                    designed specifically for Data Structures
+                    and Algorithms.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">▤</div>
+
+                    <h3>DSA Question Bank</h3>
+
+                    <p>
+                        Practice questions organized by
+                        topic and difficulty level.
+                    </p>
+
+                    <a href="#topics">
+                        Explore Questions →
+                    </a>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">◷</div>
+
+                    <h3>Timed Examinations</h3>
+
+                    <p>
+                        Take real-time exams with automatic
+                        countdown and question navigation.
+                    </p>
+
+                    <a href="#home">
+                        Take an Exam →
+                    </a>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">↗</div>
+
+                    <h3>Instant Results</h3>
+
+                    <p>
+                        Get your score and performance
+                        immediately after submission.
+                    </p>
+
+                    <a href="#home">
+                        View Analytics →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TOPICS ================= -->
+
+        <section class="topics-section" id="topics">
+
+            <div class="section-heading">
+
+                <span>DSA TOPICS</span>
+
+                <h2>
+                    Practice every important
+                    <strong>DSA concept.</strong>
+                </h2>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <div class="topic-card">
+                    <div class="topic-number">01</div>
+                    <h3>Arrays</h3>
+                    <p>Searching, traversal and manipulation</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">02</div>
+                    <h3>Linked List</h3>
+                    <p>Singly, doubly and circular lists</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">03</div>
+                    <h3>Stack</h3>
+                    <p>LIFO operations and applications</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">04</div>
+                    <h3>Queue</h3>
+                    <p>FIFO, circular and priority queues</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">05</div>
+                    <h3>Trees</h3>
+                    <p>Binary trees and traversal techniques</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">06</div>
+                    <h3>Graphs</h3>
+                    <p>BFS, DFS and graph algorithms</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">07</div>
+                    <h3>Sorting</h3>
+                    <p>Bubble, merge, quick and more</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-number">08</div>
+                    <h3>Searching</h3>
+                    <p>Linear and binary searching</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section" id="about">
+
+            <div class="cta-content">
+
+                <span>READY TO BEGIN?</span>
+
+                <h2>
+                    Turn your DSA knowledge
+                    into <strong>real performance.</strong>
+                </h2>
+
+                <p>
+                    Start practicing today and prepare yourself
+                    for technical exams and interviews.
+                </p>
+
+                <button class="primary-btn" onclick="openRegister()">
+                    Create Your Account →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <div class="logo-icon">D</div>
+
+                    <div>
+                        <h2>DSA<span>Exam</span></h2>
+                        <small>ONLINE EXAM SYSTEM</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    A modern platform for practicing
+                    Data Structures and Algorithms.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Platform</h4>
+                    <a href="#features">Features</a>
+                    <a href="#topics">Question Bank</a>
+                    <a href="#home">Examinations</a>
+                </div>
+
+                <div>
+                    <h4>Account</h4>
+                    <a href="#" onclick="openLogin()">Login</a>
+                    <a href="#" onclick="openRegister()">Register</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <span>© 2026 DSAExam. All rights reserved.</span>
+            <span>DSA Online Examination System</span>
+        </div>
+
+    </footer>
+
+
+   <!-- ================= AUTH MODAL ================= -->
+
+<div class="auth-modal" id="authModal">
+
+    <div class="auth-container">
+
+        <button class="auth-close" onclick="closeAuth()">×</button>
+
+        <!-- LEFT SIDE -->
+
+        <div class="auth-brand">
+
+            <div class="auth-brand-content">
+
+                <div class="big-logo">D</div>
+
+                <h2>DSA<span>Exam</span></h2>
+
+                <p>
+                    Your smart platform for
+                    Data Structures & Algorithms
+                    online examinations.
+                </p>
+
+                <div class="auth-feature">
+                    <span>✓</span>
+                    <div>
+                        <strong>Practice DSA</strong>
+                        <small>Topic-wise question bank</small>
+                    </div>
+                </div>
+
+                <div class="auth-feature">
+                    <span>✓</span>
+                    <div>
+                        <strong>Take Exams</strong>
+                        <small>Timed online examinations</small>
+                    </div>
+                </div>
+
+                <div class="auth-feature">
+                    <span>✓</span>
+                    <div>
+                        <strong>Track Performance</strong>
+                        <small>Instant results & analytics</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="auth-form-area">
+
+            <!-- LOGIN -->
+
+            <div class="auth-form active" id="loginForm">
+
+                <div class="form-heading">
+
+                    <span>WELCOME BACK</span>
+
+                    <h2>Sign in to your account</h2>
+
+                    <p>
+                        Enter your details to continue.
+                    </p>
+
+                </div>
+
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                >
+
+
+                <label>Password</label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                    >
+
+                    <button
+                        type="button"
+                        onclick="togglePassword('loginPassword')"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+
+                <div class="form-options">
+
+                    <label class="remember">
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <button class="auth-submit" onclick="loginUser()">
+                    Sign In →
+                </button>
+
+
+                <div class="form-divider">
+                    <span>OR</span>
+                </div>
+
+
+                <p class="switch-form">
+
+                    Don't have an account?
+
+                    <button onclick="showRegister()">
+                        Create Account
+                    </button>
+
+                </p>
+
+            </div>
+
+
+            <!-- REGISTER -->
+
+            <div class="auth-form" id="registerForm">
+
+                <div class="form-heading">
+
+                    <span>GET STARTED</span>
+
+                    <h2>Create your account</h2>
+
+                    <p>
+                        Join the DSA examination platform.
+                    </p>
+
+                </div>
+
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your full name"
+                >
+
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                >
+
+
+                <label>Password</label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Create a password"
+                    >
+
+                    <button
+                        type="button"
+                        onclick="togglePassword('registerPassword')"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+
+                <label>Account Type</label>
+
+                <select id="accountType">
+
+                    <option value="student">
+                        Student
+                    </option>
+
+                    <option value="teacher">
+                        Teacher
+                    </option>
+
+                </select>
+
+
+                <button class="auth-submit" onclick="registerUser()">
+                    Create Account →
+                </button>
+
+
+                <p class="switch-form">
+
+                    Already have an account?
+
+                    <button onclick="showLogin()">
+                        Sign In
+                    </button>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
